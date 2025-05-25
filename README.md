@@ -32,7 +32,9 @@ Esto permite:
 Dado que el enunciado especifica que no se debe usar un gestor de base de datos, y que estos deben ser volátiles sin preocuparse por restarts, se ha optado por una implementación en memoria utilizando una lista para simular la persistencia de datos.<br>
 En caso de necesitar dicha implementación, la arquitectura incluiría un directorio /repository/ a nivel de cada unidad de negocio. Es decir, si se quisiera implementar una base de datos para la entidad `Product`, se crearía un directorio `product/repository/` que contendría la lógica de acceso a datos.<br>
 El hecho de no haberlo incluido en esta prueba técnica ha sido una decisión basada en la facilitar los reportes de cobertura de tests y análisis de código en SonarQube.
+
 ---
+
 ## Análisis de calidad
 Los reportes de SonarQube y Jacoco se han generado para evaluar la calidad del código y la cobertura de tests.
 Los reportes de Jacoco se encuentran en la carpeta `target/site/jacoco/index.html`.<br>
