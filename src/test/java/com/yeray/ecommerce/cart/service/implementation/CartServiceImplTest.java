@@ -167,8 +167,8 @@ class CartServiceImplTest {
         assertNotNull(updatedCart);
         assertEquals(cartId, updatedCart.getId());
         assertEquals(1, updatedCart.getProducts().size());
-        assertEquals("Product 1", updatedCart.getProducts().getFirst().getDescription());
-        assertEquals(2, updatedCart.getProducts().getFirst().getAmount());
+        assertEquals("Product 1", updatedCart.getProducts().get(0).getDescription());
+        assertEquals(2, updatedCart.getProducts().get(0).getAmount());
     }
 
     @Test
@@ -201,8 +201,8 @@ class CartServiceImplTest {
         assertNotNull(updatedCart);
         assertEquals(cartId, updatedCart.getId());
         assertEquals(1, updatedCart.getProducts().size());
-        assertEquals("Product 1", updatedCart.getProducts().getFirst().getDescription());
-        assertEquals(5, updatedCart.getProducts().getFirst().getAmount()); // Amount should be updated to 5
+        assertEquals("Product 1", updatedCart.getProducts().get(0).getDescription());
+        assertEquals(5, updatedCart.getProducts().get(0).getAmount()); // Amount should be updated to 5
     }
 
     @Test

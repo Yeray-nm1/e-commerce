@@ -47,7 +47,7 @@ class CartMapperTest {
         assertEquals(cartEntity.getId(), dto.getId());
         assertEquals(cartEntity.getLastActivity(), dto.getLastActivity());
         assertEquals(1, dto.getProducts().size());
-        assertEquals(productDto, dto.getProducts().getFirst());
+        assertEquals(productDto, dto.getProducts().get(0));
     }
 
     @Test

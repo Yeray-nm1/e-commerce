@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### sdkmanrc ###
+.sdkmanrc
+
+### DS_Store ###
+.DS_Store

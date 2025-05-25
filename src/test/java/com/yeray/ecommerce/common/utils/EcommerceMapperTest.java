@@ -32,7 +32,7 @@ class EcommerceMapperTest {
 
         assertNotNull(result);
         assertEquals(1, result.size());
-        assertEquals(entity, result.getFirst());
+        assertEquals(entity, result.get(0));
     }
 
     @Test
@@ -45,6 +45,6 @@ class EcommerceMapperTest {
 
         assertNotNull(result);
         assertEquals(1, result.size());
-        assertEquals(dto, result.getFirst());
+        assertEquals(dto, result.get(0));
     }
 }
